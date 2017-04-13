@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://www.jq22.com/jquery-info819 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Animate.css 一款强大的预设css3动画库</title>
+<meta name="description" content="Animate.css内置了很多典型的css3动画，兼容性好使用方便。"> 
+<meta name="keywords" content="Animate,css3,css3动画,Animate是什么，Animate下载，Animate使用方法">
+<meta name="author" content="jQuery插件库">
+<meta name="Copyright" content="jQuery插件库">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="renderer" content="webkit">
+<link rel="Shortcut icon" href="http://www.jq22.com/favicon.ico">
+<link href="./Animate.css 一款强大的预设css3动画库_files/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="./Animate.css 一款强大的预设css3动画库_files/font-awesome.min.css" rel="stylesheet" media="screen">
+<link rel="stylesheet" type="text/css" href="./Animate.css 一款强大的预设css3动画库_files/wangEditor.css">
+<link rel="stylesheet" type="text/css" href="./Animate.css 一款强大的预设css3动画库_files/pifu.css">
+<style>
+.affix{display:block;margin-top:40px;-webkit-animation:fadeInDown 1s .2s ease both;-moz-animation:fadeInDown 1s .2s ease both;}@-webkit-keyframes fadeInDown{0%{opacity:0;-webkit-transform:translateY(-20px)}100%{opacity:1;-webkit-transform:translateY(0)}}@-moz-keyframes fadeInDown{0%{opacity:0;-moz-transform:translateY(-20px)}100%{opacity:1;-moz-transform:translateY(0)}}
+    .dz {font-size:14px;padding-left:10px;font-family:Vrinda;color:#666666}
+     .dzs {color:#91ab4e;padding-left:5px;}
+    .inad {background-image: url(img/inadbg.png);background-repeat: no-repeat;background-position: 0% 650px;}
+    @media screen and (max-width:1000px){
+        .inad {background-image: none;}    
+}
+.inner > .add{display:none;position:absolute;top:-1000000px;visibility:hidden}.fdad,.adsbygoogle{display:none;position:absolute;top:-1000000px;visibility:hidden}</style>
+<script src="./Animate.css 一款强大的预设css3动画库_files/hm.js"></script><script src="./Animate.css 一款强大的预设css3动画库_files/jquery.min.js"></script>
+<!--[if lt IE 9]>
+ 	<script src="/js/respond.min.js"></script> 
+	<script src="/js/html5shiv.min.js"></script>    
+<![endif]-->
+<link href="./Animate.css 一款强大的预设css3动画库_files/my.css" rel="stylesheet" media="screen">	
+<script>var n = 1;</script>
+
+<script language="javascript" type="text/javascript" src="./Animate.css 一款强大的预设css3动画库_files/35ff706fd57d11c141cdefcd58d6562b.js" charset="gb2312"></script><script type="text/javascript">
+hQGHuMEAyLn('.adsbygoogle,.fdad,.inner > .add');</script><script src="./Animate.css 一款强大的预设css3动画库_files/share.js"></script><style type="text/css">div[id^="div-gpt-ad-"],.adsbygoogle{display:none!important;}</style><link rel="stylesheet" href="./Animate.css 一款强大的预设css3动画库_files/share_style0_24.css"></head>
+<body data-spy="scroll" data-target=".navbar-example" style="background-color: rgb(244, 244, 244);">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-logo" href="http://www.jq22.com/"><img src="./Animate.css 一款强大的预设css3动画库_files/logo.png" height="100%" alt="jQuery插件,jQuery,jQuery特效.jQuery ui,jQuery 教程,css3,网页特效,JS特效"></a> </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://www.jq22.com/daima"><i class="fa fa-code"></i> &nbsp;在线代码</a></li>
+        <li><a href="http://www.jq22.com/textDifference"><i class="fa fa-balance-scale" aria-hidden="true"></i> &nbsp;文本比较</a></li>
+      	<li><a href="http://www.jq22.com/jquery-info122"><i class="fa fa-download"></i> &nbsp;jQuery下载</a></li>
+        <li><a href="http://www.jq22.com/jquery/jquery.html" target="_blank"><i class="fa fa-ship" aria-hidden="true"></i> &nbsp;前端库</a></li>
+        <li><a href="http://www.jq22.com/chm/jquery1.8.3.html" target="_blank"><i class="fa fa-book"></i> &nbsp;在线手册</a></li>
+        <li class="dropdown"><a rel="nofollow" href="http://weibo.com/jq22" target="_blank"><i class="fa fa-weibo"></i> &nbsp;微博</a></li>
+        <li>
+             
+       <a href="http://www.jq22.com/jquery-info819#" data-toggle="modal" data-target="#myModal">
+            <i class="fa fa-user"></i> &nbsp;注册/登录<span class="sr-only">(current)</span></a>
+    
+        </li>
+      </ul>
+    </div>
+    <!--/.nav-collapse --> 
+  </div>
+</nav>
+<!--end nav-->
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+      <div class="modal-content2 tcc">
+         <div class="modal-header2 top20">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                  ×
+            </button>
+            <h4 class="modal-title" id="myModalLabel">
+               
+            </h4>
+         </div>
+         <div class="modal-body tcck">     
+            <div class="input-group input-group-lg parentCls">
+              <span class="input-group-addon" id="email"><i class="fa fa-envelope-o"></i></span>                
+              <input type="text" class="form-control inputElem" placeholder="请输入登录邮箱" aria-describedby="email" id="ema" style="width: 466px;">             
+            </div>
+            <div class="input-group input-group-lg top20">
+              <span class="input-group-addon" id="pwd"><i class="fa fa-unlock-alt" style="width:18px"></i></span>
+              <input type="password" class="form-control" placeholder="请输入登录密码" aria-describedby="pwd" id="pw">
+              <span class="input-group-btn tccBut">
+                <button class="btn btn-success" type="button" onclick="emdl()">登 录</button>
+              </span>
+            </div>          
+         </div>
+               
+        <div class="modal-footer2">
+            <div class="f">
+            <a href="http://www.jq22.com/pwd.aspx">忘记密码?</a></div>
+            <div class="r"><a href="http://www.jq22.com/register.aspx">注册新用户</a></div>
+            <div class="dr"></div>
+         </div>
+         
+         <div class="d3f modal-body tcck2">          
+             <a href="http://www.jq22.com/jquery-info819#" onclick="tz()" class="qq"></a>
+             <a href="https://api.weibo.com/oauth2/authorize?client_id=3364913104&redirect_uri=http%3A%2F%2Fwww.jq22.com%2FWeiboReturn.aspx&response_type=code&display=default" class="sina"></a>
+             <a href="http://www.jq22.com/zfbReturn.aspx" class="zfb"></a>
+             <a href="http://www.jq22.com/jquery-info819#" onclick="gt()" class="git"></a>
+         </div>
+         <script>          
+             function tz() {
+                 var urldz = "https://graph.qq.com/oauth2.0/authorize?response_type=code&client_id=101135281&redirect_uri=http://www.jq22.com/QQReturn.aspx?tjurl=" + window.location.href;
+                window.location.href = urldz;
+             }
+             function gt() {
+                 var urldz = "https://github.com/login/oauth/authorize?client_id=cf869185ea7d8fcab6df&state=jq22&redirect_uri=http://www.jq22.com/github.aspx?tjurl=" + window.location.href;
+                 window.location.href = urldz;
+             }
+         </script>
+         
+      </div><!-- /.modal-content -->
+	</div><!-- /.modal -->
+</div>
+
+ 	
+<div class="yn jz container-fluid nav-bgn m0" id="menu_wrap">	
+	<div class="container m0" style="position:relative;"><a class="nzz" href="http://www.jq22.com/jqueryUI-1-jq" id="z1"><span class="sort"><i class="fa fa-paint-brush"></i>&nbsp;UI <i class="fa fa-angle-down"></i></span></a>|<a class="nzz" href="http://www.jq22.com/jquery%E8%BE%93%E5%85%A5-1-jq" id="z2"><span class="sort"><i class="fa fa-keyboard-o"></i>&nbsp;输入 <i class="fa fa-angle-down"></i></span></a>|<a class="nzz" href="http://www.jq22.com/jquery%E5%AA%92%E4%BD%93-1-jq" id="z3"><span class="sort"><i class="fa fa-film"></i>&nbsp;媒体 <i class="fa fa-angle-down"></i></span></a>|<a class="nzz" href="http://www.jq22.com/jquery%E5%AF%BC%E8%88%AA-1-jq" id="z4"><span class="sort "><i class="fa fa-paper-plane-o"></i>&nbsp;导航 <i class="fa fa-angle-down"></i></span></a><span class="navxs">|<a class="nzz" href="http://www.jq22.com/jquery%E5%85%B6%E4%BB%96-1-jq" id="z5"><span class="sort"><i class="fa fa-dropbox"></i>&nbsp;其他 <i class="fa fa-angle-down"></i></span></a></span><span class="navxs">|<a href="http://www.jq22.com/daima" target="_blank"><span class="sort"><i class="fa fa-code"></i>&nbsp;在线代码</span></a>|<a href="http://www.jq22.com/webinfo1" target="_blank"><span class="sort"><i class="fa fa-file-code-o"></i>&nbsp;常用代码</span></a>|<a href="https://www.mysubmail.com/sms?s=jq22" target="_blank" onclick="adtonji()"><span class="sort"><i class="fa fa-comment"></i>&nbsp;短信平台</span></a></span></div>
+<script>
+    function adtonji() {$.post("adtongji.aspx", { name: "a1" })}
+</script>
+<div class="container-fluid"><div id="n1" class="nav-zi ty" style="display: none;"><ul id="nz1" class="nn list-inline container m0" style="display: none;"><li><a class="c-btn c-btn--border-line" href="http://www.jq22.com/jquery-plugins%E8%83%8C%E6%99%AF-1-jq"><i class="fa fa-delicious ls"></i>背景</a></li><li><a class="c-btn c-btn--border-line" href="http://www.jq22.com/jquery-plugins%E5%AF%B9%E8%AF%9D%E6%A1%86%E5%92%8C%E7%81%AF%E7%AE%B1-1-jq"><i class="fa fa-bell-o ls"></i>对话框和灯箱</a></li><li><a class="c-btn c-btn--border-line" href="http://www.jq22.com/jquery-plugins%E7%AD%9B%E9%80%89%E5%8F%8A%E6%8E%92%E5%BA%8F-1-jq"><i class="fa fa-sort-numeric-desc ls"></i>筛选及排序</a></li><li><a class="c-btn c-btn--border-line" href="http://www.jq22.com/jquery-plugins%E5%8F%8D%E9%A6%88-1-jq"><i class="fa fa-comments-o ls"></i>反馈</a></li><li><a class="c-btn c-btn--border-line" href="http://www.jq22.com/jquery-plugins%E5%BC%B9%E5%87%BA%E5%B1%82-1-jq"><i class="fa fa-stack-overflow ls"></i>弹出层</a></li><li><a class="c-btn c-btn--border-line" href="http://www.jq22.com/jquery-plugins%E6%82%AC%E5%81%9C-1-jq"><i class="fa fa-hand-o-up ls"></i>悬停</a></li><li><a class="c-btn c-btn--border-line" href="http://www.jq22.com/jquery-plugins%E5%B8%83%E5%B1%80-1-jq"><i class="fa fa-th-large ls"></i>布局</a></li><li><a class="c-btn c-btn--border-line" href="http://www.jq22.com/jquery-plugins%E5%9B%BE%E8%A1%A8-1-jq"><i class="fa fa-bar-chart ls"></i>图表</a></li><li><a class="c-btn c-btn--border-line" href="http://www.jq22.com/jquery-plugins%E5%8A%A0%E8%BD%BD-1-jq"><i class="fa fa-spinner ls"></i>加载</a></li><li><a class="c-btn c-btn--border-line" href="http://www.jq22.com/jquery-plugins%E5%9C%86%E8%BE%B9-1-jq"><i class="fa fa-circle-o ls"></i>圆边</a></li><li><a class="c-btn c-btn--border-line" href="http://www.jq22.com/jquery-plugins%E6%BB%9A%E5%8A%A8-1-jq"><i class="fa fa-long-arrow-down ls"></i>滚动</a></li><li><a class="c-btn c-btn--border-line" href="http://www.jq22.com/jquery-plugins%E6%A0%87%E7%AD%BE-1-jq"><i class="fa fa-tags ls"></i>标签</a></li><li><a class="c-btn c-btn--border-line" href="http://www.jq22.com/jquery-plugins%E6%96%87%E6%9C%AC%E9%93%BE%E6%8E%A5-1-jq"><i class="fa fa-link ls"></i>文本链接</a></li><li><a class="c-btn c-btn--border-line" href="http://www.jq22.com/jquery-plugins%E5%B7%A5%E5%85%B7%E6%8F%90%E7%A4%BA-1-jq"><i class="fa fa-info-circle ls"></i>工具提示</a></li><li><a class="c-btn c-btn--border-line" href="http://www.jq22.com/jquery-plugins%E7%BD%91%E7%BB%9C%E7%B1%BB%E5%9E%8B-1-jq"><i class="fa fa-code-fork ls"></i>网络类型</a></li></ul><ul id="nz2" class="nn list-inline container m0" style="display: none;"><li><a class="c-btn c-btn--border-line" href="http://www.jq22.com/jquery-plugins%E6%8B%BE%E8%89%B2%E5%99%A8-1-jq"><i class="fa fa-eyedropper ls"></i>拾色器</a></li><li><a class="c-btn c-btn--border-line" href="http://www.jq22.com/jquery-plugins%E5%AE%9A%E5%88%B6%E5%92%8C%E9%A3%8E%E6%A0%BC-1-jq"><i class="fa fa-paint-brush ls"></i>定制和风格</a></li><li><a class="c-btn c-btn--border-line" href="http://www.jq22.com/jquery-plugins%E6%97%A5%E6%9C%9F%E5%92%8C%E6%97%B6%E9%97%B4-1-jq"><i class="fa fa-clock-o ls"></i>日期和时间</a></li><li><a class="c-btn c-btn--border-line" href="http://www.jq22.com/jquery-plugins%E6%8B%96%E5%92%8C%E6%94%BE-1-jq"><i class="fa fa-arrows ls"></i>拖和放</a></li><li><a class="c-btn c-btn--border-line" href="http://www.jq22.com/jquery-plugins%E9%80%9A%E7%94%A8%E8%BE%93%E5%85%A5-1-jq"><i class="fa fa-keyboard-o ls"></i>通用输入</a></li><li><a class="c-btn c-btn--border-line" href="http://www.jq22.com/jquery-plugins%E8%87%AA%E5%8A%A8%E5%AE%8C%E6%88%90-1-jq"><i class="fa fa-calculator ls"></i>自动完成</a></li><li><a class="c-btn c-btn--border-line" href="http://www.jq22.com/jquery-plugins%E5%AF%86%E7%A0%81-1-jq"><i class="fa fa-lock ls"></i>密码</a></li><li><a class="c-btn c-btn--border-line" href="http://www.jq22.com/jquery-plugins%E6%8A%95%E7%A5%A8%E7%8E%87-1-jq"><i class="fa fa-thumbs-up ls"></i>投票率</a></li><li><a class="c-btn c-btn--border-line" href="http://www.jq22.com/jquery-plugins%E6%90%9C%E7%B4%A2-1-jq"><i class="fa fa-search ls"></i>搜索</a></li><li><a class="c-btn c-btn--border-line" href="http://www.jq22.com/jquery-plugins%E9%80%89%E6%8B%A9%E6%A1%86-1-jq"><i class="fa fa-caret-square-o-down ls"></i>选择框</a></li><li><a class="c-btn c-btn--border-line" href="http://www.jq22.com/jquery-plugins%E5%BF%AB%E6%8D%B7%E9%94%AE-1-jq"><i class="fa fa-adn ls"></i>快捷键</a></li><li><a class="c-btn c-btn--border-line" href="http://www.jq22.com/jquery-plugins%E8%A7%A6%E6%91%B8-1-jq"><i class="fa fa-hand-o-down ls"></i>触摸</a></li><li><a class="c-btn c-btn--border-line" href="http://www.jq22.com/jquery-plugins%E4%B8%B0%E5%AF%8C%E7%9A%84%E8%BE%93%E5%85%A5-1-jq"><i class="fa fa-h-square ls"></i>丰富的输入</a></li><li><a class="c-btn c-btn--border-line" href="http://www.jq22.com/jquery-plugins%E4%B8%8A%E4%BC%A0-1-jq"><i class="fa fa-upload ls"></i>上传</a></li><li><a class="c-btn c-btn--border-line" href="http://www.jq22.com/jquery-plugins%E9%AA%8C%E8%AF%81-1-jq"><i class="fa fa-key ls"></i>验证</a></li></ul><ul id="nz3" class="nn list-inline container m0 nadc" style="display: block;"><li><a class="c-btn c-btn--border-line" href="http://www.jq22.com/jquery-plugins%E9%9F%B3%E9%A2%91%E5%92%8C%E8%A7%86%E9%A2%91-1-jq"><i class="fa fa-play-circle-o ls"></i>音频和视频</a></li><li><a class="c-btn c-btn--border-line" href="http://www.jq22.com/jquery-plugins%E5%B9%BB%E7%81%AF%E7%89%87%E5%92%8C%E8%BD%AE%E6%92%AD%E5%9B%BE-1-jq"><i class="fa fa-exchange ls"></i>幻灯片和轮播图</a></li><li><a class="c-btn c-btn--border-line" href="http://www.jq22.com/jquery-plugins%E5%9B%BE%E7%89%87%E5%B1%95%E7%A4%BA-1-jq"><i class="fa fa-eye ls"></i>图片展示</a></li><li><a class="c-btn c-btn--border-line" href="http://www.jq22.com/jquery-plugins%E5%9B%BE%E5%83%8F-1-jq"><i class="fa fa-picture-o ls"></i>图像</a></li><li><a class="c-btn c-btn--border-line" href="http://www.jq22.com/jquery-plugins%E5%9C%B0%E5%9B%BE-1-jq"><i class="fa fa-map-marker ls"></i>地图</a></li><li><a class="c-btn c-btn--border-line" href="http://www.jq22.com/jquery-plugins%E6%BB%91%E5%9D%97%E5%92%8C%E6%97%8B%E8%BD%AC-1-jq"><i class="fa fa-arrows-h ls"></i>滑块和旋转</a></li><li><a class="c-btn c-btn--border-line" href="http://www.jq22.com/jquery-pluginsTabs-1-jq"><i class="fa fa-folder-o ls"></i>Tabs</a></li></ul><ul id="nz4" class="nn list-inline container m0" style="display: none;"><li><a class="c-btn c-btn--border-line" href="http://www.jq22.com/jquery-plugins%E6%B0%B4%E5%B9%B3%E5%AF%BC%E8%88%AA-1-jq"><i class="fa fa-long-arrow-right ls"></i>水平导航</a></li><li><a class="c-btn c-btn--border-line" href="http://www.jq22.com/jquery-plugins%E5%9E%82%E7%9B%B4%E5%AF%BC%E8%88%AA-1-jq"><i class="fa fa-long-arrow-down ls"></i>垂直导航</a></li><li><a class="c-btn c-btn--border-line" href="http://www.jq22.com/jquery-plugins%E6%96%87%E4%BB%B6%E6%A0%91-1-jq"><i class="fa fa-sitemap ls"></i>文件树</a></li><li><a class="c-btn c-btn--border-line" href="http://www.jq22.com/jquery-plugins%E5%88%86%E9%A1%B5-1-jq"><i class="fa fa-chevron-right ls"></i>分页</a></li><li><a class="c-btn c-btn--border-line" href="http://www.jq22.com/jquery-plugins%E6%89%8B%E9%A3%8E%E7%90%B4%E8%8F%9C%E5%8D%95-1-jq"><i class="fa fa-trello ls"></i>手风琴菜单</a></li><li><a class="c-btn c-btn--border-line" href="http://www.jq22.com/jquery-plugins%E5%85%B6%E4%BB%96%E5%AF%BC%E8%88%AA-1-jq"><i class="fa fa-location-arrow ls"></i>其他导航</a></li></ul><ul id="nz5" class="nn list-inline container m0" style="display: none;"><li><a class="c-btn c-btn--border-line" href="http://www.jq22.com/jquery-plugins%E5%8A%A8%E7%94%BB%E6%95%88%E6%9E%9C-1-jq"><i class="fa fa-rocket ls"></i>动画效果</a></li><li><a class="c-btn c-btn--border-line" href="http://www.jq22.com/jquery-plugins%E6%B5%8F%E8%A7%88%E5%99%A8%E8%B0%83%E6%95%B4-1-jq"><i class="fa fa-expand ls"></i>浏览器调整</a></li><li><a class="c-btn c-btn--border-line" href="http://www.jq22.com/jquery-plugins%E7%A7%BB%E5%8A%A8-1-jq"><i class="fa fa-arrows-v ls"></i>移动</a></li><li><a class="c-btn c-btn--border-line" href="http://www.jq22.com/jquery-plugins%E7%8B%AC%E7%AB%8B%E7%9A%84%E9%83%A8%E4%BB%B6-1-jq"><i class="fa fa-cogs ls"></i>独立的部件</a></li><li><a class="c-btn c-btn--border-line" href="http://www.jq22.com/jquery-plugins%E6%9D%82%E9%A1%B9-1-jq"><i class="fa fa-gift ls"></i>杂项</a></li><li><a class="c-btn c-btn--border-line" href="http://www.jq22.com/jquery-plugins%E6%B8%B8%E6%88%8F-1-jq"><i class="fa fa-gamepad ls"></i>游戏</a></li></ul></div></div>
+ 	   
+</div>
+<!--主体-->
+        <div class="container m0 bod top70" id="zt">
+            <!--左-->
+            <div class="col-lg-9 col-md-12 col-sm-12">
+                <div class="project">
+                    <div class="adinfo">
+                           
+                    </div>
+                	<div class="project-header">                       
+                    	<h1>Animate.css 一款强大的预设css3动画库</h1>
+                        <p>所属分类：其他-动画效果</p>
+                        <div class="row pd10">
+                            <div class="f">
+                                <span><i class="fa fa-eye"></i>  &nbsp;282904 </span>
+                                <span><i class="fa fa-heart"></i>  &nbsp;485 </span>
+                                <span style="border-right: 0;  "><a href="http://www.jq22.com/message819"><i class="fa fa-comment"></i>  &nbsp;查看评论 <span style="color:#ff0000;border-right: 0; font: 20px/24px Georgia;">(36)</span></a> </span>
+                            </div>
+                            <div class="r fx">                                
+                                <div class="bdsharebuttonbox bdshare-button-style0-24" data-tag="share_1" data-bd-bind="1489363735223">	
+                                    <a class="ttqq" data-cmd="sqq" title="分享到QQ好友"></a>  
+                                    <a class="ttwx" data-cmd="weixin" href="http://www.jq22.com/jquery-info819#" title="分享到微信"></a>                                  
+                                    <a class="ttqzone" data-cmd="qzone" title="分享到QQ空间"></a>
+                                    <a class="ttsina" data-cmd="tsina" title="分享到新浪微博"></a>	
+                                    <a class="ttbdhome" data-cmd="bdhome" title="分享到百度新首页"></a>                                                              
+	                                <a class="tttqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+                                    <a class="tthuaban" data-cmd="huaban" title="分享到花瓣"></a>  
+                                    <a class="ttfbook" data-cmd="fbook" title="分享到Facebook"></a>
+                                    <a class="ttmore" data-cmd="more"></a>                                   
+                                </div>
+                            </div>
+                            
+                            <div class="dr"></div>
+                        </div>
+                        
+                    </div>
+                    <div class="project-content inad">
+                    	<img src="./Animate.css 一款强大的预设css3动画库_files/pc-e375a7be-65c2-11e4-a680-00163e001348.png" class="thumbile" alt="Animate.css 一款强大的预设css3动画库">
+                        <img src="./Animate.css 一款强大的预设css3动画库_files/9.png" class="thumbile" alt="ie兼容9">
+                         <div class="row text-center" style="margin-bottom:30px;margin-top: 10px;">                    
+                            <!-- zsy -->
+                            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2935286260943234" data-ad-slot="2014829100" data-ad-format="auto"></ins>
+                            <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                            </script>
+                        </div>
+
+                        <div class="thumbile">
+                            <a href="http://www.jq22.com/yanshi819" target="_blank" class="btn btn-success"><i class="fa fa-eye"></i> &nbsp;查看演示</a>
+                            <a href="http://daneden.github.io/animate.css/" target="_blank" class="btn btn-info" style="display:inline-block"><i class="fa fa-globe"></i> &nbsp;website</a>
+                            <a href="javascript:void(0)" onclick="mydown()" class="btn btn btn-danger" data-toggle="modal" data-target="#mydown"><i class="fa fa-cloud-download"></i> &nbsp;立即下载</a>                            
+                        </div>
+
+                       <div class="alert cjms" role="alert">插件描述：Animate.css内置了很多典型的css3动画，兼容性好使用方便。</div>                    
+                        <p><span style="color: rgb(51, 51, 51); font-family: &#39;Helvetica Neue&#39;, Helvetica, &#39;Segoe UI&#39;, Arial, freesans, sans-serif; line-height: 25.6000003814697px; background-color: rgb(255, 255, 255);">Animate.css是一个有趣的，跨浏览器的css3动画库。很值得我们在项目中引用。</span></p><p><strong><span style="color:#333333;font-family:Helvetica Neue, Helvetica, Segoe UI, Arial, freesans, sans-serif"><span style="line-height: 25.6000003814697px; background-color: rgb(255, 255, 255);">用法</span></span></strong></p><p><span style="color:#333333;font-family:Helvetica Neue, Helvetica, Segoe UI, Arial, freesans, sans-serif"><span style="line-height: 25.6000003814697px; background-color: rgb(255, 255, 255);">1、首先引入animate css文件<br></span></span></p><div><div id="highlighter_993587" class="syntaxhighlighter  html"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">head</code><code class="html plain">&gt;</code></div><div class="line number2 index1 alt1"><code class="html spaces">&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">link</code>&nbsp;<code class="html color1">rel</code><code class="html plain">=</code><code class="html string">"stylesheet"</code>&nbsp;<code class="html color1">href</code><code class="html plain">=</code><code class="html string">"animate.min.css"</code><code class="html plain">&gt;</code></div><div class="line number3 index2 alt2"><code class="html plain">&lt;/</code><code class="html keyword">head</code><code class="html plain">&gt;</code></div></div></td></tr></tbody></table></div></div><p><span style="color:#333333;font-family:Helvetica Neue, Helvetica, Segoe UI, Arial, freesans, sans-serif"><span style="line-height: 25.6000003814697px; background-color: rgb(255, 255, 255);"></span></span>2、给指定的元素加上指定的动画样式名</p><div><div id="highlighter_338821" class="syntaxhighlighter  html"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">div</code>&nbsp;<code class="html color1">class</code><code class="html plain">=</code><code class="html string">"animated&nbsp;bounceOutLeft"</code><code class="html plain">&gt;&lt;/</code><code class="html keyword">div</code><code class="html plain">&gt;</code></div></div></td></tr></tbody></table></div></div><p>这里包括两个class名，第一个是基本的，必须添加的样式名，任何想实现的元素都得添加这个。第二个是指定的动画样式名。</p><p>3、如果说想给某个元素动态添加动画样式，可以通过jquery来实现：</p><div><div id="highlighter_948274" class="syntaxhighlighter  js"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="js plain">$(</code><code class="js string">'#yourElement'</code><code class="js plain">).addClass(</code><code class="js string">'animated&nbsp;bounceOutLeft'</code><code class="js plain">);</code></div></div></td></tr></tbody></table></div></div><p>4、当动画效果执行完成后还可以通过以下代码添加事件<br></p><div><div id="highlighter_450081" class="syntaxhighlighter  js"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="js plain">$(</code><code class="js string">'#yourElement'</code><code class="js plain">).one(</code><code class="js string">'webkitAnimationEnd&nbsp;mozAnimationEnd&nbsp;MSAnimationEnd&nbsp;oanimationend&nbsp;animationend'</code><code class="js plain">,&nbsp;doSomething);</code></div></div></td></tr></tbody></table></div></div><p>你也可以通过 JavaScript 或 jQuery 给元素添加这些 class，比如：</p><div><div id="highlighter_81445" class="syntaxhighlighter  js"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="js plain">$(</code><code class="js keyword">function</code><code class="js plain">(){</code></div><div class="line number2 index1 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">$(</code><code class="js string">'#jq22'</code><code class="js plain">).addClass(</code><code class="js string">'animated&nbsp;bounce'</code><code class="js plain">);</code></div><div class="line number3 index2 alt2"><code class="js plain">});</code></div></div></td></tr></tbody></table></div></div><p>有些动画效果最后会让元素不可见，比如淡出、向左滑动等等，可能你又需要将 class 删除，比如：</p><div><div id="highlighter_417746" class="syntaxhighlighter  js"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="js plain">$(</code><code class="js keyword">function</code><code class="js plain">(){</code></div><div class="line number2 index1 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">$(</code><code class="js string">'#jq22'</code><code class="js plain">).addClass(</code><code class="js string">'animated&nbsp;bounce'</code><code class="js plain">);</code></div><div class="line number3 index2 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">setTimeout(</code><code class="js keyword">function</code><code class="js plain">(){</code></div><div class="line number4 index3 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">$(</code><code class="js string">'#jq22'</code><code class="js plain">).removeClass(</code><code class="js string">'bounce'</code><code class="js plain">);</code></div><div class="line number5 index4 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">},&nbsp;1000);</code></div><div class="line number6 index5 alt1"><code class="js plain">});</code></div></div></td></tr></tbody></table></div></div><p>animate.css 的默认设置也许有些时候并不是我们想要的，所以你可以重新设置，比如：</p><div><div id="highlighter_872227" class="syntaxhighlighter  js"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="js preprocessor">#jq22{</code></div><div class="line number2 index1 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">animate-duration:&nbsp;2s;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js comments">//动画持续时间</code></div><div class="line number3 index2 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">animate-delay:&nbsp;1s;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js comments">//动画延迟时间</code></div><div class="line number4 index3 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">animate-iteration-count:&nbsp;2;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js comments">//动画执行次数</code></div><div class="line number5 index4 alt2"><code class="js plain">}</code></div></div></td></tr></tbody></table></div></div><p>所有的动画样式名请参见demo页面。</p><p><br></p>                                      
+                        <ul class="x-top" style="padding-left:0px">
+                            <div class="fy f zhs"><span class="jg35">PREVIOUS:</span></div>
+                            <div class="fy f txtRight zhs"><span class="jg352">NEXT:</span></div>
+                            <div class="fy f"><a class="PREVIOUS" href="http://www.jq22.com/jquery-info820"> TicTic </a> </div>
+                            <div class="fy f txtRight"><a class="NEXT" href="http://www.jq22.com/jquery-info818"> 迅雷首页官网多图焦点图特效 </a> </div>
+                            <div class="dr"></div>
+                            <div class="df"></div>
+                        </ul>
+                    </div>
+                   
+                   		<div class="in100">
+                        <h4 style="padding-left:10px">相关插件-动画效果</h4>
+                            
+                   			<div class="col-lg-4 col-md-3 col-sm-4">
+                                <a href="http://www.jq22.com/jquery-info756"><img src="./Animate.css 一款强大的预设css3动画库_files/pc-603fcb6c-6037-11e4-8fc7-00163e001348.png"></a>
+                                <div class="cover-info">
+                                    <a href="http://www.jq22.com/jquery-info756"><h4>CSS3模拟灯光效果</h4></a>
+                                    <small>CSS3模拟灯光投影效果</small>                       
+                                </div>  
+                                <div class="cover-fields">
+                                    <i class="fa fa-list-ul"></i> &nbsp;
+                                    动画效果
+                                </div>
+                                <div class="cover-stat">
+                                    <i class="fa fa-eye"></i><span class="f10"> &nbsp;10519</span>
+                                    <i class="fa fa-heart"></i><span class="f10"> &nbsp;40</span>
+                                    <div class="cover-yh">
+                                        <a href="http://www.jq22.com/mem3455" data-container="body" data-toggle="popover" data-placement="top" data-content="正在加载 " data-original-title="" title="">
+                                            <i class="fa fa-user-secret"></i>
+                                        </a>
+                                    </div>
+                                </div>        
+                            </div>                    
+                            
+                   			<div class="col-lg-4 col-md-3 col-sm-4">
+                                <a href="http://www.jq22.com/jquery-info5017"><img src="./Animate.css 一款强大的预设css3动画库_files/2015-12-07-16-12-45.png"></a>
+                                <div class="cover-info">
+                                    <a href="http://www.jq22.com/jquery-info5017"><h4>html5 水波扩散效果</h4></a>
+                                    <small>HTML5实现点击水波扩散效果</small>                       
+                                </div>  
+                                <div class="cover-fields">
+                                    <i class="fa fa-list-ul"></i> &nbsp;
+                                    动画效果
+                                </div>
+                                <div class="cover-stat">
+                                    <i class="fa fa-eye"></i><span class="f10"> &nbsp;10264</span>
+                                    <i class="fa fa-heart"></i><span class="f10"> &nbsp;109</span>
+                                    <div class="cover-yh">
+                                        <a href="http://www.jq22.com/mem60548" data-container="body" data-toggle="popover" data-placement="top" data-content="潮流 " data-original-title="" title="">
+                                            <i class="fa fa-user-secret"></i>
+                                        </a>
+                                    </div>
+                                </div>        
+                            </div>                    
+                            
+                   			<div class="col-lg-4 col-md-3 col-sm-4">
+                                <a href="http://www.jq22.com/jquery-info717"><img src="./Animate.css 一款强大的预设css3动画库_files/pc-42b23a3a-5e43-11e4-afa4-00163e001348.png"></a>
+                                <div class="cover-info">
+                                    <a href="http://www.jq22.com/jquery-info717"><h4>纯CSS3实现打火机火焰动画</h4></a>
+                                    <small>这又是一款很酷的纯CSS3动画特效，它是一个可以点燃的打火机，当你用鼠标滑过这只打火机时，打火机就会打开，然后开始出现火焰燃烧的动画特效。另外要说明的是，整个动画都是利用纯CSS3实现的</small>                       
+                                </div>  
+                                <div class="cover-fields">
+                                    <i class="fa fa-list-ul"></i> &nbsp;
+                                    动画效果
+                                </div>
+                                <div class="cover-stat">
+                                    <i class="fa fa-eye"></i><span class="f10"> &nbsp;6758</span>
+                                    <i class="fa fa-heart"></i><span class="f10"> &nbsp;24</span>
+                                    <div class="cover-yh">
+                                        <a href="http://www.jq22.com/mem41" data-container="body" data-toggle="popover" data-placement="top" data-content="那抹浅笑丶印在心上 " data-original-title="" title="">
+                                            <i class="fa fa-user-secret"></i>
+                                        </a>
+                                    </div>
+                                </div>        
+                            </div>                    
+                            
+                   			<div class="col-lg-4 col-md-3 col-sm-4">
+                                <a href="http://www.jq22.com/jquery-info1667"><img src="./Animate.css 一款强大的预设css3动画库_files/pc-cc738c72-9991-11e4-a4c2-00163e001348.jpg"></a>
+                                <div class="cover-info">
+                                    <a href="http://www.jq22.com/jquery-info1667"><h4>shake.css 元素颤抖插件</h4></a>
+                                    <small>基于css3的抖动效果，各种鬼畜般的抖动。</small>                       
+                                </div>  
+                                <div class="cover-fields">
+                                    <i class="fa fa-list-ul"></i> &nbsp;
+                                    动画效果
+                                </div>
+                                <div class="cover-stat">
+                                    <i class="fa fa-eye"></i><span class="f10"> &nbsp;7826</span>
+                                    <i class="fa fa-heart"></i><span class="f10"> &nbsp;53</span>
+                                    <div class="cover-yh">
+                                        <a href="http://www.jq22.com/mem3408" data-container="body" data-toggle="popover" data-placement="top" data-content="Mr.li√ " data-original-title="" title="">
+                                            <i class="fa fa-user-secret"></i>
+                                        </a>
+                                    </div>
+                                </div>        
+                            </div>                    
+                            
+                            
+                            <div class="df"></div>  
+                   		</div>
+                  
+                    	<div class="in2">
+                            	<h4>讨论这个项目（36）<span class="z14">回答他人问题或分享插件使用方法奖励jQ币</span></h4>
+                                
+                                <div class="pl">
+                                	<div class="tx"><a href="http://www.jq22.com/mem452479"><img src="./Animate.css 一款强大的预设css3动画库_files/1.png"></a></div>
+                                	<ul class="plbg">
+                                    	<div class="f"> 其实我也不想很酷 <span class="jl">0</span></div>
+                                        <div class="r"> <span class="z12">2017/3/12 9:06:35</span></div>
+                                        <div class="dr"></div>
+  									</ul>
+                                    <ul style="word-wrap: break-word;width: 100%">
+                                    <p>怎么设置元素动画执行完以后返回元素初始状态</p>
+                                            
+                                          <a class="hf" name="30755">回复</a>
+                                          <div class="lyhf"></div>
+                                           
+                                         <div class="dr"></div>
+                                    </ul>
+                                </div>
+                                
+                                <div class="pl">
+                                	<div class="tx"><a href="http://www.jq22.com/mem436233"><img src="./Animate.css 一款强大的预设css3动画库_files/32.png"></a></div>
+                                	<ul class="plbg">
+                                    	<div class="f"> zhuzhuxiayy <span class="jl">0</span></div>
+                                        <div class="r"> <span class="z12">2017/1/13 11:01:12</span></div>
+                                        <div class="dr"></div>
+  									</ul>
+                                    <ul style="word-wrap: break-word;width: 100%">
+                                    我用的transition-delay和animate-delay延迟加载都不起作用呢
+                                            
+                                          <a class="hf" name="28195">回复</a>
+                                          <div class="lyhf"></div>
+                                           
+                                         <div class="dr"></div>
+                                    </ul>
+                                </div>
+                                
+                                <div class="pl">
+                                	<div class="tx"><a href="http://www.jq22.com/mem271020"><img src="./Animate.css 一款强大的预设css3动画库_files/36.png"></a></div>
+                                	<ul class="plbg">
+                                    	<div class="f"> [!..!] <span class="jl">0</span></div>
+                                        <div class="r"> <span class="z12">2017/1/4 14:01:19</span></div>
+                                        <div class="dr"></div>
+  									</ul>
+                                    <ul style="word-wrap: break-word;width: 100%">
+                                    <p>怎么做列队动画</p>
+                                                                                       
+                                            <ul>
+                                                <div class="pl">
+                                                    <div class="tx tx2"><a href="http://www.jq22.com/mem314566"><img src="./Animate.css 一款强大的预设css3动画库_files/39.png"></a></div>
+                                                    <ul class="plbg plbg2">
+                                    	                <div class="f"> 一<span class="jl">0</span></div>
+                                                        <div class="r"> <span class="z12">2017/1/17 15:06:22</span></div>
+                                                        <div class="dr"></div>
+  									                </ul>
+                                                    <ul style="padding-top: 10px; padding-bottom: 10px;word-wrap: break-word;width: 100%">
+                                                         <p>queue和dequeue做。</p>
+                                                    </ul>
+                                                </div>
+                                             </ul>
+                                                
+                                          <a class="hf" name="27593">回复</a>
+                                          <div class="lyhf"></div>
+                                           
+                                         <div class="dr"></div>
+                                    </ul>
+                                </div>
+                                
+                                <div class="pl">
+                                	<div class="tx"><a href="http://www.jq22.com/mem260259"><img src="./Animate.css 一款强大的预设css3动画库_files/4.png"></a></div>
+                                	<ul class="plbg">
+                                    	<div class="f">  　  <span class="jl">0</span></div>
+                                        <div class="r"> <span class="z12">2016/12/16 16:12:51</span></div>
+                                        <div class="dr"></div>
+  									</ul>
+                                    <ul style="word-wrap: break-word;width: 100%">
+                                    好像不支持ie9
+                                            
+                                          <a class="hf" name="26545">回复</a>
+                                          <div class="lyhf"></div>
+                                           
+                                         <div class="dr"></div>
+                                    </ul>
+                                </div>
+                                
+                                <div class="pl">
+                                	<div class="tx"><a href="http://www.jq22.com/mem246630"><img src="./Animate.css 一款强大的预设css3动画库_files/14.png"></a></div>
+                                	<ul class="plbg">
+                                    	<div class="f"> 够狠才是男人 <span class="jl">0</span></div>
+                                        <div class="r"> <span class="z12">2016/12/16 16:12:01</span></div>
+                                        <div class="dr"></div>
+  									</ul>
+                                    <ul style="word-wrap: break-word;width: 100%">
+                                    这个和wow.js那个好
+                                            
+                                          <a class="hf" name="26542">回复</a>
+                                          <div class="lyhf"></div>
+                                           
+                                         <div class="dr"></div>
+                                    </ul>
+                                </div>
+                                
+                                <div class="pl">
+                                	<div class="tx"><a href="http://www.jq22.com/mem367298"><img src="./Animate.css 一款强大的预设css3动画库_files/4.png"></a></div>
+                                	<ul class="plbg">
+                                    	<div class="f"> 筱子郗 <span class="jl">0</span></div>
+                                        <div class="r"> <span class="z12">2016/12/13 13:12:05</span></div>
+                                        <div class="dr"></div>
+  									</ul>
+                                    <ul style="word-wrap: break-word;width: 100%">
+                                    请问是先执行后延迟，还是先延迟后执行？
+                                            
+                                          <a class="hf" name="26265">回复</a>
+                                          <div class="lyhf"></div>
+                                           
+                                         <div class="dr"></div>
+                                    </ul>
+                                </div>
+                                
+                                <div class="pl">
+                                	<div class="tx"><a href="http://www.jq22.com/mem54666"><img src="./Animate.css 一款强大的预设css3动画库_files/32.png"></a></div>
+                                	<ul class="plbg">
+                                    	<div class="f"> fhe <span class="jl">0</span></div>
+                                        <div class="r"> <span class="z12">2016/12/8 17:12:44</span></div>
+                                        <div class="dr"></div>
+  									</ul>
+                                    <ul style="word-wrap: break-word;width: 100%">
+                                    当浏览到该元素时候出现，怎么解决？
+                                                                                       
+                                            <ul>
+                                                <div class="pl">
+                                                    <div class="tx tx2"><a href="http://www.jq22.com/mem275016"><img src="./Animate.css 一款强大的预设css3动画库_files/9(1).png"></a></div>
+                                                    <ul class="plbg plbg2">
+                                    	                <div class="f"> 银色上弦月<span class="jl">0</span></div>
+                                                        <div class="r"> <span class="z12">2017/1/18 10:37:17</span></div>
+                                                        <div class="dr"></div>
+  									                </ul>
+                                                    <ul style="padding-top: 10px; padding-bottom: 10px;word-wrap: break-word;width: 100%">
+                                                         <p>ScrollReveal.js</p>
+                                                    </ul>
+                                                </div>
+                                             </ul>
+                                                
+                                          <a class="hf" name="26039">回复</a>
+                                          <div class="lyhf"></div>
+                                           
+                                         <div class="dr"></div>
+                                    </ul>
+                                </div>
+                                
+                                <div class="pl">
+                                	<div class="tx"><a href="http://www.jq22.com/mem268862"><img src="./Animate.css 一款强大的预设css3动画库_files/20.png"></a></div>
+                                	<ul class="plbg">
+                                    	<div class="f"> 相忘于江湖 <span class="jl">0</span></div>
+                                        <div class="r"> <span class="z12">2016/10/21 23:10:09</span></div>
+                                        <div class="dr"></div>
+  									</ul>
+                                    <ul style="word-wrap: break-word;width: 100%">
+                                    如何兼容ie6
+                                                                                       
+                                            <ul>
+                                                <div class="pl">
+                                                    <div class="tx tx2"><a href="http://www.jq22.com/mem379781"><img src="./Animate.css 一款强大的预设css3动画库_files/25.png"></a></div>
+                                                    <ul class="plbg plbg2">
+                                    	                <div class="f">      梦里葬花い<span class="jl" style="display: inline-block;">评论奖励 1 jQ币</span></div>
+                                                        <div class="r"> <span class="z12">2016/11/24 11:11:10</span></div>
+                                                        <div class="dr"></div>
+  									                </ul>
+                                                    <ul style="padding-top: 10px; padding-bottom: 10px;word-wrap: break-word;width: 100%">
+                                                         IE6连PNG图片都不支持，CSS3的所有属性基本上都不支持，要做动画什么的就不要考虑IE6了，用JQ能很难实现，而且还很卡！！
+                                                    </ul>
+                                                </div>
+                                             </ul>
+                                                                                           
+                                            <ul>
+                                                <div class="pl">
+                                                    <div class="tx tx2"><a href="http://www.jq22.com/mem314566"><img src="./Animate.css 一款强大的预设css3动画库_files/39.png"></a></div>
+                                                    <ul class="plbg plbg2">
+                                    	                <div class="f"> 一<span class="jl">0</span></div>
+                                                        <div class="r"> <span class="z12">2017/1/17 15:07:00</span></div>
+                                                        <div class="dr"></div>
+  									                </ul>
+                                                    <ul style="padding-top: 10px; padding-bottom: 10px;word-wrap: break-word;width: 100%">
+                                                         <p>IE6是什么鬼，还有人用吗？windows98？</p>
+                                                    </ul>
+                                                </div>
+                                             </ul>
+                                                
+                                          <a class="hf" name="23510">回复</a>
+                                          <div class="lyhf"></div>
+                                           
+                                         <div class="dr"></div>
+                                    </ul>
+                                </div>
+                                
+                                <div class="pl">
+                                	<div class="tx"><a href="http://www.jq22.com/mem309749"><img src="./Animate.css 一款强大的预设css3动画库_files/32.png"></a></div>
+                                	<ul class="plbg">
+                                    	<div class="f"> 狠一点 <span class="jl">0</span></div>
+                                        <div class="r"> <span class="z12">2016/10/21 11:10:50</span></div>
+                                        <div class="dr"></div>
+  									</ul>
+                                    <ul style="word-wrap: break-word;width: 100%">
+                                    这个可以用在fullpage.js 一块使用吗
+                                                                                       
+                                            <ul>
+                                                <div class="pl">
+                                                    <div class="tx tx2"><a href="http://www.jq22.com/mem403469"><img src="./Animate.css 一款强大的预设css3动画库_files/34.png"></a></div>
+                                                    <ul class="plbg plbg2">
+                                    	                <div class="f"> 海水正蓝<span class="jl">0</span></div>
+                                                        <div class="r"> <span class="z12">2016/11/30 14:11:52</span></div>
+                                                        <div class="dr"></div>
+  									                </ul>
+                                                    <ul style="padding-top: 10px; padding-bottom: 10px;word-wrap: break-word;width: 100%">
+                                                         可以的
+                                                    </ul>
+                                                </div>
+                                             </ul>
+                                                
+                                          <a class="hf" name="23473">回复</a>
+                                          <div class="lyhf"></div>
+                                           
+                                         <div class="dr"></div>
+                                    </ul>
+                                </div>
+                                
+                                <div class="pl">
+                                	<div class="tx"><a href="http://www.jq22.com/mem231077"><img src="./Animate.css 一款强大的预设css3动画库_files/23.png"></a></div>
+                                	<ul class="plbg">
+                                    	<div class="f"> 天使*恋人 <span class="jl">0</span></div>
+                                        <div class="r"> <span class="z12">2016/9/10 17:09:56</span></div>
+                                        <div class="dr"></div>
+  									</ul>
+                                    <ul style="word-wrap: break-word;width: 100%">
+                                    这个可以添加延迟吗，求解！
+                                                                                       
+                                            <ul>
+                                                <div class="pl">
+                                                    <div class="tx tx2"><a href="http://www.jq22.com/mem271041"><img src="./Animate.css 一款强大的预设css3动画库_files/32.png"></a></div>
+                                                    <ul class="plbg plbg2">
+                                    	                <div class="f"> 拎不清。<span class="jl">0</span></div>
+                                                        <div class="r"> <span class="z12">2016/9/22 16:09:52</span></div>
+                                                        <div class="dr"></div>
+  									                </ul>
+                                                    <ul style="padding-top: 10px; padding-bottom: 10px;word-wrap: break-word;width: 100%">
+                                                         可以啊 在css里面加transition-delay就可以了
+                                                    </ul>
+                                                </div>
+                                             </ul>
+                                                
+                                          <a class="hf" name="21768">回复</a>
+                                          <div class="lyhf"></div>
+                                           
+                                         <div class="dr"></div>
+                                    </ul>
+                                </div>
+                                
+                                 <div class="text-center z20 top20 pla plb"><a href="http://www.jq22.com/message819"><i class="fa fa-comment" aria-hidden="true"></i> 查看更多评论 <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></div>
+                                 <a name="anchor"></a>
+                                <div class="df dr"></div> 
+                        </div>
+
+                        <div class="in2">
+                            <div id="err" class="alert alert-danger" role="alert" style="display:none"><i class="fa fa-smile-o"></i> 登录后才可以评论</div>
+                            <div id="err2" class="alert alert-warning" role="alert" style="display:none"><i class="fa fa-smile-o"></i> 30秒后在评论吧!</div>
+                            <div class="wangEditor-container"><div class="wangEditor-btn-container clearfix"><div class="wangEditor-btn-container-group"><div class="wangEditor-toolTip"><div class="wangEditor-toolTip-content">插入代码</div></div><a class="wangEditor-btn-container-btn wangEditor-btn-container-btn-default" href="http://www.jq22.com/jquery-info819#" title=""><i class="icon-wangEditor-terminal"></i></a><div class="wangEditor-toolTip"><div class="wangEditor-toolTip-content">加粗</div></div><a class="wangEditor-btn-container-btn wangEditor-btn-container-btn-default" href="http://www.jq22.com/jquery-info819#" title="" commandname="bold"><i class="icon-wangEditor-bold"></i></a></div><div class="wangEditor-btn-container-group"><div class="wangEditor-toolTip"><div class="wangEditor-toolTip-content">列表</div></div><ul class="wangEditor-drop-menu" style="display: none;"><li><a href="http://www.jq22.com/jquery-info819#" customcommandname="InsertUnorderedList"><i class="icon-wangEditor-list-bullet"> 无序列表</i></a></li><li><a href="http://www.jq22.com/jquery-info819#" customcommandname="InsertOrderedList"><i class="icon-wangEditor-list-numbered"> 有序列表</i></a></li></ul><a class="wangEditor-btn-container-btn wangEditor-btn-container-btn-default" href="http://www.jq22.com/jquery-info819#" title=""><i class="icon-wangEditor-list-bullet"></i><i class="icon-wangEditor-angle-down" style="margin-left:3px;"></i></a><div class="wangEditor-toolTip"><div class="wangEditor-toolTip-content">对齐</div></div><ul class="wangEditor-drop-menu" style="display: none;"><li><a href="http://www.jq22.com/jquery-info819#" customcommandname="JustifyLeft"><i class="icon-wangEditor-align-left"> 左对齐</i></a></li><li><a href="http://www.jq22.com/jquery-info819#" customcommandname="JustifyCenter"><i class="icon-wangEditor-align-center"> 居中</i></a></li><li><a href="http://www.jq22.com/jquery-info819#" customcommandname="JustifyRight"><i class="icon-wangEditor-align-right"> 右对齐</i></a></li></ul><a class="wangEditor-btn-container-btn wangEditor-btn-container-btn-default" href="http://www.jq22.com/jquery-info819#" title=""><i class="icon-wangEditor-align-left"></i><i class="icon-wangEditor-angle-down" style="margin-left:3px;"></i></a></div><div class="wangEditor-btn-container-group"><div class="wangEditor-toolTip"><div class="wangEditor-toolTip-content">横线</div></div><a class="wangEditor-btn-container-btn wangEditor-btn-container-btn-default" href="http://www.jq22.com/jquery-info819#" title="" commandname="InsertHorizontalRule"><i class="icon-wangEditor-minus"></i></a><div class="wangEditor-toolTip"><div class="wangEditor-toolTip-content">撤销</div></div><a class="wangEditor-btn-container-btn wangEditor-btn-container-btn-default" href="http://www.jq22.com/jquery-info819#" title="" commandname="commonUndo"><i class="icon-wangEditor-ccw"></i></a></div></div><div class="wangEditor-textarea-container" style="height: 155px;"><div class="wangEditor-textarea" contenteditable="true" style="min-height: 145px;"><p><br></p></div></div><a href="http://www.jq22.com/jquery-info819#" class="wangEditor-elemDeleteBtn"><i class="icon-wangEditor-cancel"></i></a><div class="wangEditor-imgResize"></div></div><textarea id="textarea1" style="height: 200px; width: 100%; display: none;"></textarea>
+                            
+                            <div class="r top10">
+                            <button onclick="getPlainTxt()" type="button" id="myButton" data-loading-text="Loading..." class="btn btn-primary" autocomplete="off">
+                              发表评论
+                            </button>
+                            
+                            </div>
+                            <div class="dr"></div>
+                        </div>
+
+                        <div class="huif">                         
+                             <div class="wangEditor-container"><div class="wangEditor-btn-container clearfix"><div class="wangEditor-btn-container-group"><div class="wangEditor-toolTip"><div class="wangEditor-toolTip-content">插入代码</div></div><a class="wangEditor-btn-container-btn wangEditor-btn-container-btn-default" href="http://www.jq22.com/jquery-info819#" title=""><i class="icon-wangEditor-terminal"></i></a><div class="wangEditor-toolTip"><div class="wangEditor-toolTip-content">加粗</div></div><a class="wangEditor-btn-container-btn wangEditor-btn-container-btn-default" href="http://www.jq22.com/jquery-info819#" title="" commandname="bold"><i class="icon-wangEditor-bold"></i></a></div><div class="wangEditor-btn-container-group"><div class="wangEditor-toolTip"><div class="wangEditor-toolTip-content">列表</div></div><ul class="wangEditor-drop-menu" style="display: none;"><li><a href="http://www.jq22.com/jquery-info819#" customcommandname="InsertUnorderedList"><i class="icon-wangEditor-list-bullet"> 无序列表</i></a></li><li><a href="http://www.jq22.com/jquery-info819#" customcommandname="InsertOrderedList"><i class="icon-wangEditor-list-numbered"> 有序列表</i></a></li></ul><a class="wangEditor-btn-container-btn wangEditor-btn-container-btn-default" href="http://www.jq22.com/jquery-info819#" title=""><i class="icon-wangEditor-list-bullet"></i><i class="icon-wangEditor-angle-down" style="margin-left:3px;"></i></a><div class="wangEditor-toolTip"><div class="wangEditor-toolTip-content">对齐</div></div><ul class="wangEditor-drop-menu" style="display: none;"><li><a href="http://www.jq22.com/jquery-info819#" customcommandname="JustifyLeft"><i class="icon-wangEditor-align-left"> 左对齐</i></a></li><li><a href="http://www.jq22.com/jquery-info819#" customcommandname="JustifyCenter"><i class="icon-wangEditor-align-center"> 居中</i></a></li><li><a href="http://www.jq22.com/jquery-info819#" customcommandname="JustifyRight"><i class="icon-wangEditor-align-right"> 右对齐</i></a></li></ul><a class="wangEditor-btn-container-btn wangEditor-btn-container-btn-default" href="http://www.jq22.com/jquery-info819#" title=""><i class="icon-wangEditor-align-left"></i><i class="icon-wangEditor-angle-down" style="margin-left:3px;"></i></a></div><div class="wangEditor-btn-container-group"><div class="wangEditor-toolTip"><div class="wangEditor-toolTip-content">横线</div></div><a class="wangEditor-btn-container-btn wangEditor-btn-container-btn-default" href="http://www.jq22.com/jquery-info819#" title="" commandname="InsertHorizontalRule"><i class="icon-wangEditor-minus"></i></a><div class="wangEditor-toolTip"><div class="wangEditor-toolTip-content">撤销</div></div><a class="wangEditor-btn-container-btn wangEditor-btn-container-btn-default" href="http://www.jq22.com/jquery-info819#" title="" commandname="commonUndo"><i class="icon-wangEditor-ccw"></i></a></div></div><div class="wangEditor-textarea-container" style="height: 142px;"><div class="wangEditor-textarea" contenteditable="true" style="min-height: 132px;"><p><br></p></div></div><a href="http://www.jq22.com/jquery-info819#" class="wangEditor-elemDeleteBtn"><i class="icon-wangEditor-cancel"></i></a><div class="wangEditor-imgResize"></div></div><textarea id="textarea2" style="height: 150px; width: 100%; display: none;"></textarea>
+                             <button onclick="hftj()" type="button" class="btn btn-primary top10">回复</button>
+                            <a class="qxhf" onclick="qx()" style="padding-top: 10px;">取消回复</a>
+                        </div>
+                </div>
+  
+           </div>
+      
+            <!--end左-->
+            
+            <!--右-->
+            <div class="col-lg-2 visible-lg" style="width:200px">
+                <div class="affd affix-top" style="width:200px">
+                <ul class="zuo f ">
+                    <h6>PROMULGATOR</h6>
+                    <a href="http://www.jq22.com/mem1"><img src="./Animate.css 一款强大的预设css3动画库_files/8.png"></a>
+                    <div class="zuox f">
+                    	<h4>hacker</h4>
+                        <i class="fa fa-map-marker"></i> <span>火星</span>
+                    </div>
+                    <button type="button" class="btn btn-z top20" onclick="zuozhe()"><i class="fa fa-plus-circle"></i> 关注作者 <span>(330)</span></button>
+                    <button type="button" class="btn btn-z top10" onclick="sc()"><i class="fa fa-heart-o"></i> 收藏此插件 <span>(485)</span></button>
+                    <div class="df"></div>
+                </ul>
+                <div class="df"></div>
+                 </div>
+            	<ul class="list-group" style="margin-bottom:10px">
+  <div class="input-group">
+    <input type="text" class="form-control" placeholder="搜索插件.." style="height: 34px; margin-top: 8px;" id="searchtxt">
+    <span class="input-group-btn">
+    <button class="btn btn-default" type="button" id="seobut" style="border-top-left-radius: 0px; border-bottom-left-radius: 0px; border-left-width: 0px;"><i class="fa fa-search"></i></button>
+    </span> 
+    
+  </div>
+</ul>
+ 
+                <ul class="list-group">
+                  <a class="list-group-item on" href="http://www.jq22.com/jq1-jq1" data-para="time"><i class="fa fa-flag"></i> &nbsp;最新发布</a>
+                  <a class="list-group-item" href="http://www.jq22.com/jq1-jq4" data-para="comments"><i class="fa fa-heart"></i> &nbsp;最多收藏</a>
+                  <a class="list-group-item" href="http://www.jq22.com/jq1-jq2" data-para="comments"><i class="fa fa-comments-o"></i> &nbsp;最多评论</a>
+                  <a class="list-group-item" href="http://www.jq22.com/jq1-jq3" data-para="downloads"><i class="fa fa-arrow-circle-o-down"></i> &nbsp;最多下载</a>
+                  <a class="list-group-item" href="http://www.jq22.com/jq1-jq8" data-para="ie8"><i class="fa fa-bus"></i> &nbsp;兼容IE8</a>
+                  <a class="list-group-item" href="http://www.jq22.com/jq1-jq6" data-para="ie6"><i class="fa fa-motorcycle"></i> &nbsp;兼容IE6</a> 
+                </ul>
+                <ul class="list-group">
+                     <a class="list-group-item on" href="http://www.jq22.com/cssgsh" data-para="time"><i class="fa fa-css3"></i> &nbsp;css 格式化工具</a>
+                     <a class="list-group-item on" href="http://www.jq22.com/jsgsh" data-para="time"><i class="fa fa-code"></i> &nbsp;js 格式化工具</a>
+                     <a class="list-group-item on" href="http://www.jq22.com/cdn" data-para="time"><i class="fa fa-rocket"></i> &nbsp;CDN加速</a>
+                </ul>
+                <ul class="list-group" style="margin-top:0px">
+                    <button type="button" class="btn btn-info" style="width:100%" onclick="fbcj()">发布资源获得jQ币</button> 
+                    <a class="btn btn-success top10" style="width:100%" href="http://www.jq22.com/zxzf.aspx">直接获得jQ币</a> 
+                </ul>
+                </div>
+           
+            <!--end右-->        
+    </div>  
+<!--end主体-->
+
+<!--底部-->
+<nav class="foot navbar-inverse navbar-fixed-bottom">
+	<ul class="list-inline">
+      <li class="footer-ss"><a href="http://www.jq22.com/copyright.aspx">版权声明</a></li>
+      <li class="footer-ss"><a href="http://www.jq22.com/feedback.aspx">在线反馈</a></li>
+      <li class="footer-ss"><a href="http://www.jq22.com/cooperation.aspx">广告合作</a></li>
+      <li class="footer-ss">帮助中心</li>
+      <li>Copyright © 2012-2017 jQuery插件库Version 3.0.0. 备案号:沪ICP备13043785号-1.</li>
+    </ul>
+    <ul class="list-inline text-right">
+   	 	<li>
+     
+    	</li>
+    </ul>
+</nav>
+
+<script>
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?b3a3fc356d0af38b811a0ef8d50716b8";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+ 	
+<!--end底部-->
+
+<div class="itop" style="display: none;"></div>
+
+<!-- Modal -->
+<div class="modal fade" id="mydown" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content dwontop">
+      <div class="modal-header dwonbtbg dwonx">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+        <h4 class="modal-title " id="myModalLabel">Animate.css 一款强大的预设css3动画库</h4>
+      </div>
+      <div class="modal-body ">
+         <div class="yuei">
+         	<i class="fa fa-btc"></i> 我当前jQ币余额：<span class="z30 f20 og" id="jf">正在获取..</span> <i class="fa fa-download"></i> 已下载次数：<span class="z30">12224</span>   
+         </div>
+         <div class="yuei">
+         	<span class="xzsm">所需jQ币：<span class="en">0</span></span><a href="javascript:void(0)" onclick="xz()" class="xzsm xza"><i class="fa fa-download"></i> 开始下载</a>  
+         </div>
+         <div id="err3" class="alert alert-danger top20" role="alert" style="display:none;background-color: #FFF6F6;"><i class="fa fa-frown-o"></i> <span id="xzts"></span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<form id="openWin" action="http://www.jq22.com/jquery-info819#" target="_blank" method="get"></form>
+<script src="./Animate.css 一款强大的预设css3动画库_files/bootstrap.min.js"></script>
+<script src="./Animate.css 一款强大的预设css3动画库_files/m.js"></script>
+<script type="text/javascript" src="./Animate.css 一款强大的预设css3动画库_files/shCore.js"></script>
+<script type="text/javascript" src="./Animate.css 一款强大的预设css3动画库_files/shBrushXml.js"></script>
+<script type="text/javascript">SyntaxHighlighter.highlight();</script>
+<script type="text/javascript" src="./Animate.css 一款强大的预设css3动画库_files/wangEditor.min.js"></script>
+<script type="text/javascript" charset="utf-8">
+    $('.affd').affix({ offset: { top: $('.affd').offset().top + 500 } });
+    $("#seobut").click(function () { var seo = $("#searchtxt").val(); if (seo.length > 1) { window.location.href = "search?seo=" + seo; } });
+    $('#searchtxt').bind('keypress', function (event) { if (event.keyCode == "13") { var seo = $("#searchtxt").val(); if (seo.length > 1) { window.location.href = "search?seo=" + seo; } } });
+    $(function () {
+        var editor = $('#textarea1').wangEditor({
+            'menuConfig': [
+				['insertCode', 'bold'],
+				['list', 'justify'],
+				['insertHr', 'undo']
+            ]
+        });
+        var editor2 = $('#textarea2').wangEditor({
+            'menuConfig': [
+				['insertCode', 'bold'],
+				['list', 'justify'],
+				['insertHr', 'undo']
+            ]
+        });
+    });
+    var a = "819";
+    var dzurl = window.location.href.substr(0, 26);
+    var dzurl2 = window.location.href.substr(0, 22);
+    var dzurl3 = window.location.href.substr(0, 27);
+    var dzurl4 = window.location.href.substr(0, 11);
+    if (dzurl == "http://www.jq22.com/plugin" || dzurl2 == "http://jq22.com/plugin" || dzurl3 == "http://jq22.com/jquery-info" || dzurl4 == "http://demo") {
+        window.location.href = "http://www.jq22.com/jquery-info" + a;
+    }
+    var errstr = window.location.href;
+    sperrstr = errstr.split("");
+    errul = sperrstr[sperrstr.length - 1];
+    if (errul == "/") {
+        errstr = errstr.substring(0, errstr.length - 1);
+        window.location.href = errstr;
+    }
+    var b = "1";
+    var lytjbut = document.getElementById('myButton');
+    function getPlainTxt() {
+        if ($('#textarea1').val().length > 5) {
+            lytjbut.disabled = true;
+        }
+        setTimeout(function () {        
+            var k="o";
+            if(k=="0"){
+                myLogin($('#textarea1').val());
+            }
+            else
+            {
+                $("#err").css("display", "block");
+            }
+            
+        }, 1000);        
+    }
+    var pid;
+    $(".hf").click(function () {
+        pid=$(this).attr("name");
+        $(".hf").css("padding-bottom", "10px");
+        $(".huif").css({ "top": $(this).offset().top - 30, "display": "block" });
+        $(this).css("padding-bottom", "300px");
+    });
+    function qx() {
+        $(".hf").css("padding-bottom", "10px");
+        $(".huif").css("display", "none");
+    }
+    function hftj() {
+        var jhf = document.getElementById("textarea2").value;
+        jhf = jhf.replace(/<(script)[\S\s]*?\1>|style\=".+?"|title\=".+?"|class\=".+?"/gi, "");
+        jhf = jhf.replace(/<p><br><\/p>|<p><\/p>/gi, "");
+        jhf = jhf.replace(/<\/?([a-o]|[q-s]|[u-z])[^>]*>/gi, "");
+        jhf = jhf.replace(/<\/?(textarea)[^>]*>/gi, "");
+        var hfHTML = encodeURIComponent(jhf);
+        if (hfHTML.length > 5) {
+            var h = $.ajax({
+                type: 'post',
+                url: '/fyadd.aspx',
+                data: { yy: pid, nr:hfHTML, ww:a},
+                cache: false,
+                dataType: 'text',
+                success: function (data){
+                    if (data == "y") {
+                        window.location.reload();
+                    } else {
+                        $("#err2").css("display", "block");
+                        $("#err2").addClass("dou2");
+                    }
+                },
+                error: function () { }
+            });
+        }
+    }
+    function myLogin(aa) {
+        var jhf = aa;
+        jhf = jhf.replace(/<(script)[\S\s]*?\1>|style\=".+?"|title\=".+?"|class\=".+?"/gi, "");
+        jhf = jhf.replace(/<p><br><\/p>|<p><\/p>/gi, "");
+        jhf = jhf.replace(/<\/?([a-o]|[q-s]|[u-z])[^>]*>/gi, "");
+        jhf = jhf.replace(/<\/?(textarea)[^>]*>/gi, "");
+        var encodeHTML = encodeURIComponent(jhf);
+        if (aa.length > 3) {
+            var yz = $.ajax({
+                type: 'post',
+                url: '/lyadd.aspx',
+                data: { wz: a, nr: encodeHTML, zz: b },
+                cache: false,
+                dataType: 'text',
+                success: function (data) {
+                    if (data == "y") {                        
+                        window.location.reload();
+                    } else {
+                        $("#err2").css("display", "block");
+                        $("#err2").addClass("dou2");
+                    }
+                },
+                error: function () { }
+            });
+        }
+    }
+    function mydown() {
+        var yz = $.ajax({
+            type: 'post',
+            url: '/down.aspx',
+            data: {},
+            cache: false,
+            dataType: 'text',
+            success: function (data) {
+                $("#jf").html(data);
+            },
+            error: function () { }
+        });
+    }
+    function xz() {
+        var yz = $.ajax({
+            type: 'post',
+            url: '/xz.aspx',
+            data: { wz: a },
+            cache: false,
+            dataType: 'text',
+            success: function (data) {
+                if (data == '3') {
+                    $("#xzts").html("登录后才可以下载！");
+                    $("#err3").css("display", "block");
+                    $("#err3").addClass("dou2");
+                }
+                else if (data == '0') {
+                    $("#err3").css("display", "block");
+                    $("#err3").addClass("dou2");
+                    $("#xzts").html("余额不足,发布资源、回答他人提问、分享插件使用方法奖励jQ币，或者直接 <b><a href='http://www.jq22.com/zxzf.aspx' target='_blank' style='color: #24B900; font-size:17px'>充值!</a></b>");
+                }
+                else
+                {
+                    $("#xzts").html(data);
+                    window.location.href = "../"+data;
+                }
+            },
+            error: function () { }
+        });
+    }
+    function sc() {     
+        var yz = $.ajax({
+            type: 'post',
+            url: '/shou.aspx',
+            data: { wz:a},
+            cache: false,
+            dataType: 'text',
+            success: function (data) {
+                if (data == "m") {                  
+                    $("#myModal").modal();
+                } else {                  
+                    window.location.href = window.location;
+                    lytjbut.disabled = false;
+                }
+            },
+            error: function () { }
+        });     
+    }
+    function zuozhe() {
+        var yz = $.ajax({
+            type: 'post',
+            url: '/zuozhe.aspx',
+            data: {z:b },
+            cache: false,
+            dataType: 'text',
+            success: function (data) {
+                if (data == "m") {
+                    $("#myModal").modal();
+                } else {
+                    window.location.href = window.location;
+                }
+            },
+            error: function () { }
+        });
+    }
+    function fbcj() {
+        yh = "";
+        if (yh != "") {
+            window.location.href = "jq22Release.aspx";
+        } else {
+            $("#myModal").modal();
+        }
+    }
+    $(".jl").each(function () {
+        if ($(this).text() > 0) {
+            $(this).css('display', 'inline-block');
+            $(this).html("评论奖励 " + $(this).text() + " jQ币");
+        }
+    });
+    $(function () { var e = $(".itop"); $(window).scroll(function () { var t = $(document).scrollTop(); if (t > 300) { e.fadeIn("slow") } else { e.fadeOut("slow") } }); e.click(function () { $("html,body").animate({ scrollTop: 0 }, 500) }) });
+
+    $.post("newsMessage.aspx", function (data) { if (data == "y") { $(".xyd").fadeIn("slow") } });
+</script>
+<script>
+	window._bd_share_config = {
+		common : {
+			bdText : 'Animate.css 一款强大的预设css3动画库',	
+			bdDesc : 'Animate.css内置了很多典型的css3动画，兼容性好使用方便。',	
+		    bdUrl: 'http://www.jq22.com/jquery-info819',
+		    bdPic: 'http://assets.jq22.com/plugin/pc-e375a7be-65c2-11e4-a680-00163e001348.png'
+		},
+		share : [{
+			"bdSize" : 24
+		}],				
+	}
+	with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+<script async="" src="./Animate.css 一款强大的预设css3动画库_files/adsbygoogle.js"></script>
+<div id="pfk"><div class="pfys"><i class="fa fa-cog " aria-hidden="true"></i><a class="pfysA pfy1" name="#222222"></a><a class="pfysA pfy2" name="#f4f4f4"></a></div></div>
+<script src="./Animate.css 一款强大的预设css3动画库_files/pifu.js"></script>
+
+
+<div class="wangEditor-modal-container"><div class="wangEditor-modal"><div class="wangEditor-modal-header clearfix"><a href="http://www.jq22.com/jquery-info819#" commandname="close" class="wangEditor-modal-header-close"><i class="icon-wangEditor-cancel"></i></a><b>插入代码</b><div class="wangEditor-modal-header-line"></div></div><p>请输入代码 ：</p><div><textarea id="wangeditor_02938131997361779_1" style="width:100%; height:100px;"></textarea></div><button id="wangeditor_02938131997361779_3" type="button" class="wangEditor-modal-btn">插入</button></div></div><div class="wangEditor-modal-container"><div class="wangEditor-modal"><div class="wangEditor-modal-header clearfix"><a href="http://www.jq22.com/jquery-info819#" commandname="close" class="wangEditor-modal-header-close"><i class="icon-wangEditor-cancel"></i></a><b>插入代码</b><div class="wangEditor-modal-header-line"></div></div><p>请输入代码 ：</p><div><textarea id="wangeditor_02938131997361779_4" style="width:100%; height:100px;"></textarea></div><button id="wangeditor_02938131997361779_6" type="button" class="wangEditor-modal-btn">插入</button></div></div><script type="text/javascript" src="./Animate.css 一款强大的预设css3动画库_files/ssa.ashx" id="d997ed0e-d1a3-4bec"></script></body></html>
